@@ -37,4 +37,4 @@ function activate_run($profile){
     $cache->update_awaitingactivation();
 }
 
-//activate_run(["test", "test"]);
+//activate_run(["1", "2"]);
