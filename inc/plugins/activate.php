@@ -46,7 +46,8 @@ function profile_activation($user_id){
     global $db, $cache;
 
     //OLD: Pass $profile as array of UID's
-    //$user_ids = implode(", ", $profile);
+    //$user_ids = implode(", ", $user_id);
+    //$query = $db->simple_select("users", "uid, username, email, usergroup, coppauser", "uid IN (" . $user_id . ")");
 
     //NEW: Pass $user_id as one UID at a time
 
