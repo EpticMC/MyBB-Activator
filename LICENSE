@@ -1,154 +1,21 @@
-EPTICMC LICENSE
+MIT License
 
----
+Copyright (c) 2017 EpticMC
 
-  Copyright (c) The EpticMC Project
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-  The Plugin was developed on behalf of EpticMC.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-  EpticMC is a project by NullDev Ltd.
-
----
-
-1. Definitions
-
-  1.1 "License" means this document.
-
-  1.2 "Licensable" means having the right to grant, to the maximum
-    extent possible, whether at the time of the initial grant or
-    subsequently acquired, any and all rights conveyed herein.
-
-  1.3 "Commercial Use" means covered code utilized by EpticMC to generate a
-    revenue stream, including but not limited to, embedding the source
-    code in EpticMC's proprietary software, executable software, or
-    consulting utilizing the source code.
-
-  1.4 "Contributor" means each entity that creates or contributes to the
-    creation of Modifications.
-
-  1.5 "Covered Code" means the Original Source Code, Modifications, or
-    the combination of the Original Source Code and Modifications, in
-    each case including portions thereof. The Original Source Code,
-    developed by EpticMC, hereinafter referred to as
-    "us" is described in the Source Code notice required by
-    Exhibit A.
-
-  1.6 "Source Code" means the form of the Covered Code for
-    making modifications to it, including all modules it contains, plus
-    any associated interface definition files, scripts used to control
-    compilation and installation of an Executable, or a list of source
-    code differential comparisons against either the Original Source
-    Code or another well known, available Covered Code of the
-    Author's choice.
-
-  1.7 "Larger Work" means a work, which combines Covered Code or
-    portions thereof with code not governed by the terms of this
-    License.
-
-  1.8 "Electronic Distribution Mechanism" means a mechanism generally
-    accepted in the software development community for the electronic
-    transfer of data.
-
-2. Source Code License - Contributor Grant
-
-  Contributor Grant. Each Contributor hereby grants EpticMC a
-  world-wide, royalty-free, non-exclusive license, subject to third
-  party intellectual property claims:
-
-    (a) to use, reproduce, modify, display, perform, sublicense and
-      distribute the Modifications created by such Contributor (or
-      portions thereof) either on an unmodified basis, with other
-      Modifications, as Covered Code or as part of a Larger Work; and
-
-    (b) under patents now or hereafter owned or controlled by
-      EpticMC, to make, have made, and use ("Utilize") the Covered
-      Code (or portions thereof).
-
-    (c) the licenses granted in this Section 2.1 (a) and (b) are
-      effective on the date EpticMC first receives Covered Code.
-
-    (d) No License is granted by EpticMC for the Commercial Use of
-      Covered Code under this License.
-
-    (e) No License is granted by EpticMC for the distribution of
-      Covered Code under this License.
-
-3. Distribution
-
-  The Contributor must not distribute the 
-  Source Code, the Covered Code or the Binary form of the Source Code and the Covered Code.
-
-4. Application of this License.
-
-  This License applies to Covered Code attached to the notice in Exhibit A.
-
-5. DISCLAIMER OF WARRANTY.
-
-  COVERED CODE IS PROVIDED UNDER THIS LICENSE ON AN "AS IS" BASIS,
-  WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
-  INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE COVERED CODE IS
-  FREE OF DEFECTS, MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR
-  NON-INFRINGING. SHOULD ANY COVERED CODE PROVE
-  DEFECTIVE IN ANY RESPECT, YOU (NOT EPTICMC OR ANY OTHER
-  CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR
-  CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL
-  PART OF THIS LICENSE. NO USE OF ANY COVERED CODE IS AUTHORIZED
-  HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
-
-6. TERMINATION.
-
-  This License and the rights granted hereunder will terminate
-  automatically if the collaborator fails to comply with terms herein. 
-  All sublicenses to the Covered Code which are properly granted shall
-  survive any termination of this License. Provisions which, by their
-  nature, must remain in effect beyond the termination of this License
-  shall survive.
-
-7. LIMITATION OF LIABILITY.
-
-  UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT
-  (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL EPTICMC, 
-  ANY OTHER CONTRIBUTOR, OR ANY DISTRIBUTOR OF COVERED
-  CODE, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO EPTICMC OR
-  ANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR
-  CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT
-  LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER
-  FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR
-  LOSSES, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE
-  POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT
-  APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH
-  PARTY'S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH
-  LIMITATION.
-
-8. U.S. GOVERNMENT END USERS,
-
-  The Covered Code is a "commercial item," as that term is defined in
-  48 C.F.R. 2.101 (Oct. 1995). consisting of "commercial computer
-  software" and "commercial computer software documentation," as such
-  terms are used in 48 C.F.R. 12.212 (Sept. 1995). Consistent with 48
-  C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June
-  1995), all U.S. Government End Users acquire Covered Code with only
-  those rights set forth herein.
-
-9. MISCELLANEOUS.
-
-  This License represents the complete agreement concerning subject
-  matter hereof. Nothing in this AGREEMENT shall be construed as
-  conferring by implication, estoppel or otherwise any license or
-  rights other than those granted in this License.
-
-EXHIBIT A.
-
-  The contents of this file are subject to the EpticMC Project.
-  License (the "License"); you may not use this file except in
-  compliance with the License.
-
-SUMMARY.
-
-  NullDev, as well as EpticMC reserve all rights for this plugin and is the Legal Owner of it.
-
-  This plugin must not be distributed elsewhere in any way (e.g.: "Leaked" or "Nulled").
-  This includes but is not limited to Binary and Source Code form.
-
-  Do not duplicate or distribute without written permission from NullDev Ltd. or an EpticMC Representative.
-
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
