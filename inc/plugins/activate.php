@@ -26,12 +26,14 @@ function activate_activate(){   global $db, $cache; }
 function activate_deactivate(){ global $db, $cache; }
 function activate_run(){        global $db, $cache; }
 
-function handle_hook() {
+function handle_hook(){
     global $mybb, $db, $plugins;    
-    
-    $regCode = "QiW6bu5h";
 
     if ($mybb->input["action"] != "activateuser") return;
+
+    if (empty($mybb->input["acode"])) die("No code provided");
+
+    $regCode = $mybb->get_input("acode", MyBB::INPUT_STRING);
 
     $userIDRow = $db->simple_select("awaitingactivation", "uid", "code='" . $regCode . "'");
     $idRow = mysqli_fetch_assoc($userIDRow);
