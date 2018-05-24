@@ -33,11 +33,9 @@ function handle_hook() {
 
     if ($mybb->input["action"] != "activateuser") return;
 
-    //TODO:
-    //-> Register Code to UID
-    //profile_activation($uid);
-
-    $userID = $db->simple_select("awaitingactivation", "uid", "code IN (" . $regCode . ")");
+    $userIDRow = $db->simple_select("awaitingactivation", "uid", "code='" . $regCode . "'");
+    $idRow = mysqli_fetch_assoc($userIDRow);
+    $userID = $idRow["uid"];
 
     profile_activation($userID);
 }
@@ -50,12 +48,12 @@ function profile_activation($user_id){
 
     //NEW: Pass $user_id as one UID at a time
 
-    if (empty($user_ids)) die("No user selcted");
+    if (empty($user_id)) die("No user selcted");
 
-    $query = $db->simple_select("users", "uid, username, email, usergroup, coppauser", "uid IN (" . $user_id . ")");
+    $query = $db->simple_select("users", "uid, username, email, usergroup, coppauser", "uid='" . $user_id . "'");
 
     while ($user = $db->fetch_array($query)){
-        if($user["coppauser"]) $updated_user = array("coppauser" => 0);
+        if ($user["coppauser"]) $updated_user = array("coppauser" => 0);
         else $db->delete_query("awaitingactivation", "uid='" . $user["uid"] . "'");
 
         if ($user["usergroup"] == 5) $updated_user["usergroup"] = 2;
