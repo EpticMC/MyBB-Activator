@@ -29,11 +29,17 @@ function activate_run(){        global $db, $cache; }
 function handle_hook() {
     global $mybb, $db, $plugins;    
     
+    $regCode = "QiW6bu5h";
+
     if ($mybb->input["action"] != "activateuser") return;
 
     //TODO:
     //-> Register Code to UID
     //profile_activation($uid);
+
+    $userID = $db->simple_select("awaitingactivation", "uid", "code IN (" . $regCode . ")");
+
+    profile_activation($userID);
 }
 
 function profile_activation($user_id){
@@ -50,9 +56,10 @@ function profile_activation($user_id){
 
     while ($user = $db->fetch_array($query)){
         if($user["coppauser"]) $updated_user = array("coppauser" => 0);
-        else $db->delete_query("awaitingactivation", "uid='" . $user['uid'] . "'");
-        if ($user["usergroup"] == 5) $updated_user['usergroup'] = 2;
-        $db->update_query("users", $updated_user, "uid='" . $user['uid'] . "'");
+        else $db->delete_query("awaitingactivation", "uid='" . $user["uid"] . "'");
+
+        if ($user["usergroup"] == 5) $updated_user["usergroup"] = 2;
+        $db->update_query("users", $updated_user, "uid='" . $user["uid"] . "'");
     }
 
     $cache->update_awaitingactivation();
