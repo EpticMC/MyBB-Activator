@@ -22,10 +22,11 @@ function activate_info(){
     );
 }
 
-function activate_activate(){ global $db, $cache; }
+function activate_activate(){   global $db, $cache; }
 function activate_deactivate(){ global $db, $cache; }
+function activate_run(){        global $db, $cache; }
 
-function pillars_page() {
+function handle_hook() {
     global $mybb, $db, $plugins;    
     
     if ($mybb->input["action"] != "activateuser") return;
@@ -35,20 +36,24 @@ function pillars_page() {
     //profile_activation($uid);
 }
 
-function profile_activation($profile){
+function profile_activation($user_id){
     global $db, $cache;
-    $user_ids = implode(", ", $profile);
 
+    //OLD: Pass $profile as array of UID's
+    //$user_ids = implode(", ", $profile);
+
+    //NEW: Pass $user_id as one UID at a time
 
     if (empty($user_ids)) die("No user selcted");
-    $query = $db->simple_select("users", "uid, username, email, usergroup, coppauser", "uid IN ({$user_ids})");
+
+    $query = $db->simple_select("users", "uid, username, email, usergroup, coppauser", "uid IN (" . $user_id . ")");
+
     while ($user = $db->fetch_array($query)){
         if($user["coppauser"]) $updated_user = array("coppauser" => 0);
-        else $db->delete_query("awaitingactivation", "uid='{$user['uid']}'");
+        else $db->delete_query("awaitingactivation", "uid='" . $user['uid'] . "'");
         if ($user["usergroup"] == 5) $updated_user['usergroup'] = 2;
-        $db->update_query("users", $updated_user, "uid='{$user['uid']}'");
+        $db->update_query("users", $updated_user, "uid='" . $user['uid'] . "'");
     }
+
     $cache->update_awaitingactivation();
 }
-
-
