@@ -32,4 +32,4 @@ Once the validation is done, the API sends a request to misc.php with the activa
 
 [https://api.epticmc.com/activate?usercode=abc&uuid=22891b6c11954740b240247315f06ba3](https://api.epticmc.com/activate?usercode=abc&uuid=22891b6c11954740b240247315f06ba3)
 
-[https://epticmc.com/misc.php?action=activateuser&acode=x](https://epticmc.com/misc.php?action=activateuser&acode=x)
+[https://epticmc.com/forum/misc.php?action=activateuser&acode=x](https://epticmc.com/forum/misc.php?action=activateuser&acode=x)
